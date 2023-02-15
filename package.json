@@ -1,13 +1,16 @@
 {
   "name": "failover-readiness-probe",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Probe recovery dependencies and record whether failover paths are usable.",
   "type": "module",
+  "bin": { "failover-readiness-probe": "./bin/failover-readiness-probe.mjs" },
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "test": "node --test"
+    "lint": "node --check src/index.mjs && node --check bin/failover-readiness-probe.mjs",
+    "test": "node --test",
+    "check": "npm run lint && npm test"
   },
   "license": "MIT",
   "repository": {
