@@ -1,0 +1,1 @@
+{"schemaVersion":"1","complete":true,"asOf":"2026-09-26T00:00:00Z","maxAgeHours":24,"prerequisites":[{"id":"storage","state":"fail","observedAt":"2026-09-26T00:00:00Z","dependsOn":[]},{"id":"database","state":"pass","observedAt":"2026-09-26T00:00:00Z","dependsOn":["storage"]}],"paths":[{"id":"recovery","requires":["database"]}]}
